@@ -1,5 +1,5 @@
-/* Athena Corporate Theme - Tailwind CSS v4 */
 @import "tailwindcss";
+/* Athena Corporate Theme - Tailwind CSS v4 */
 
 @theme {
     /* Corporate tokens */
@@ -112,13 +112,13 @@
 
 @layer components {
     .btn-primary {
-        @apply px-5 py-2 text-white font-medium transition-colors hover:bg-opacity-90 active:translate-y-[1px];
+        @apply px-5 py-2 text-white font-medium transition-colors  active:translate-y-[1px];
         background-color: var(--color-button-bg);
         border-radius: var(--radius-custom);
     }
 
     .card {
-        @apply p-6 border border-gray-200 transition-shadow hover:shadow-md;
+        @apply p-6 border; border-color: color-mix(in srgb, var(--color-text) 10%, transparent); transition-shadow hover:shadow-md;
         background-color: var(--color-card-bg);
         border-radius: var(--radius-custom);
         box-shadow: var(--shadow-main);
@@ -128,3 +128,4 @@
         @apply px-2 py-0.5 bg-gray-100 text-gray-700 text-xs font-semibold uppercase tracking-wide rounded-sm;
     }
 }
+.btn-primary:hover { opacity: 0.9; }
